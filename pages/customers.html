@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="flex">
+    <div class="sidebar bg-dark" style="min-height: 100vh; width: 265px;">
+      <nav>
+        <a href="home.html">
+          <div class="sidebar-header">
+            <i class="devicon-bootstrap-plain logo"></i>
+            <h3 class="fs-4" style="color: white;">Empresa</h3>
+          </div>
+        </a>
+        <ul style="list-style: none;">
+          <li class="line"></li>
+          <li>
+            <a href="#" id="dashboard">
+              <div class="text-white list-container">
+                <div class="container">
+                  <div class="center">
+                    <img src="../assets/svg/dashboard.svg" alt="">
+                    Dashboard
+                  </div>
+                  <div class="arrow">
+                    <img src="../assets/svg/arrow_down.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+              <ul style="color: white; display: none;" id="content">
+                <li>
+                  <a href="reports_sales.html">
+                    <div class="text-white list-container">
+                      <div class="container">
+                        <div class="center">
+                          <img src="../assets/svg/arrow_left.svg" alt="">
+                          Relatório de Vendas
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="reports_orders.html">
+                    <div class="text-white list-container">
+                      <div class="container">
+                        <div class="center">
+                          <img src="../assets/svg/arrow_left.svg" alt="">
+                          Relatório de Compras
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="best_sellers.html">
+                    <div class="text-white list-container">
+                      <div class="container">
+                        <div class="center">
+                          <img src="../assets/svg/arrow_left.svg" alt="">
+                          Produtos Mais Vendidos
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="less_sold.html">
+                    <div class="text-white list-container">
+                      <div class="container">
+                        <div class="center">
+                          <img src="../assets/svg/arrow_left.svg" alt="">
+                          Produtos Menos Vendidos
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li>
+            <a href="orders.html">
+              <div class="text-white list-container">
+                <div class="container">
+                  <div class="center">
+                    <img src="../assets/svg/orders.svg" alt="">
+                      Pedidos
+                  </div>
+                </div>
+                </div>
+            </a>
+          </li>
+          <li>
+            <a href="stock.html">
+              <div class="text-white list-container">
+                <div class="container">
+                  <div class="center">
+                    <img src="../assets/svg/stock.svg" alt="">
+                      Estoque
+                  </div>
+                </div>
+                </div>
+            </a>
+          </li>
+          <li>
+            <a href="products.html">
+              <div class="text-white list-container">
+                <div class="container">
+                  <div class="center">
+                    <img src="../assets/svg/products.svg" alt="">
+                    Produtos
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="customers.html">
+              <div class="text-white list-container">
+                <div class="container">
+                  <div class="center">
+                    <img src="../assets/svg/customers.svg" alt="">
+                      Clientes
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="users.html">
+              <div class="text-white list-container">
+                <div class="container">
+                  <div class="center">
+                    <img src="../assets/svg/user.svg" alt="">
+                      Usuários
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="line" style="margin-top: 20px;"></li>
+          <div style="text-align: center;">
+            <button class="btn btn-outline-light" style="margin-top: 10px;" type="submit">Sign Out</button>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <h3 class="fs-4" style="color: white; text-align: center; width: 100%;">Clientes</h3>
+        </nav>
+      </div>
+      <div class="flex-end">
+        <div class="group-buttons">
+          <button class="btn btn-sm btn-outline-secondary">Compartilhar</button>
+          <button class="btn btn-sm btn-outline-secondary">Exportar</button>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-outline-secondary dropdown-toggle align-items">
+            <img src="../assets/svg/calendar.svg" alt="">
+            Essa semana
+          </button>
+        </div>
+      </div>
+      <div class="search">
+          <div class="row">
+              <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="row">
+                      <div class="col col-lg-3 col-md-5 col-sm-5 col-xs-12">
+                        <label for="inputName" class="sr-only">Nome</label>
+                        <input type="text" class="form-control form-control-sm">
+                      </div>
+                      <div class="col col-lg-3 col-md-5 col-sm-5 col-xs-12">
+                        <label for="inputEmail" class="sr-only">Email</label>
+                        <input type="text" class="form-control form-control-sm">
+                      </div>
+                  </div>
+                  <div class="form-button">
+                    <button class="btn btn-md btn-secondary btn-block" type="submit">Buscar</button>
+                    <a href="form_customer.html" class="btn btn-md btn-primary">Adicionar Cliente</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="report">
+        <div class="reports-header">
+          <h3 class="fs-4">Clientes</h3>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Endereço</th>
+                  <th>CPF</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Júlio Hirose</td>
+                  <td>juliohirose@teste.com</td>
+                  <td>Rua 2 de Dezembro, 12</td>
+                  <td>900.564.740-08</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Fernanda Lopes</td>
+                  <td>fernadalopes@teste.com</td>
+                  <td>Rodovia Augusto Montenegro, 1890</td>
+                  <td>419.450.400-33</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Lucas Montano</td>
+                  <td>lucasmontano@teste.com</td>
+                  <td>Travessa Vileta, 55</td>
+                  <td>043.151.890-49</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Felipe Simas</td>
+                  <td>felipesimas@teste.com</td>
+                  <td>Avenida Visconde de Sousa Franco, 45</td>
+                  <td>910.420.430-19</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Nilce Moreto</td>
+                  <td>nilcemoreto@teste.com</td>
+                  <td>Avenida Almirante Barroso, 88</td>
+                  <td>290.782.940-86</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Maria Júlia</td>
+                  <td>mariajulia@teste.com</td>
+                  <td>Avenida Senador Lemos, 3378</td>
+                  <td>916.942.780-18</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Antônio Vieira</td>
+                  <td>antoniovieira@teste.com</td>
+                  <td>Travessa Veiga Cabral, 7890</td>
+                  <td>579.503.600-54</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Everton Lima</td>
+                  <td>evertonlima@teste.com</td>
+                  <td>Rua 8 de Maio, 350</td>
+                  <td>138.117.520-14</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Vanessa Souza</td>
+                  <td>vanessasouza@teste.com</td>
+                  <td>Avenida 16 de Novembro, 189</td>
+                  <td>757.900.080-62</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Suellen Guimarães</td>
+                  <td>suellenguimaraes@teste.com</td>
+                  <td>Avenida Bernardo Sayão, 90</td>
+                  <td>208.396.400-48</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Luciano Almeida</td>
+                  <td>lucianoalmeida@teste.com</td>
+                  <td>Vila Santa Maria, 90</td>
+                  <td>878.374.490-88</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Léticia Siqueira</td>
+                  <td>leticiasiqueira@teste.com</td>
+                  <td>Alameda Kawamura, 35</td>
+                  <td>619.792.880-97s</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Guilherme Graf</td>
+                  <td>guilhermegraf@teste.com</td>
+                  <td>Rua Santa Rita, 10</td>
+                  <td>759.631.110-56</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Rita Araújo</td>
+                  <td>ritaaraujo@teste.com</td>
+                  <td>Rua Vila Nova, 47</td>
+                  <td>748.783.100-06</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Gabriel Oliveira</td>
+                  <td>gabrieloliveira@teste.com</td>
+                  <td>Avenida Almirante Barroso, 3639</td>
+                  <td>781.342.980-01</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Emilía Magalhães</td>
+                  <td>emiliamagalhaes@teste.com</td>
+                  <td>Rua Doutor Vasconcelos, 20</td>
+                  <td>178.322.320-05</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example" style="margin: 10px;">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
